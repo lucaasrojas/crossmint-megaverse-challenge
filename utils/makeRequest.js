@@ -51,4 +51,4 @@ function makeRequest(row, column, astral, time) {
         );
     }
 }
-export default makeRequest;
+module.export = makeRequest;

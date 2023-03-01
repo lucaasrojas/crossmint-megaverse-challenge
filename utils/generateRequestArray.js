@@ -16,5 +16,4 @@ function generateRequestsArray(goalMap) {
     });
     return requests;
 }
-
-export default generateRequestsArray;
+module.export = generateRequestsArray;
