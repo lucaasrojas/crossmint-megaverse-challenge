@@ -1,3 +1,6 @@
+const axios = require("axios");
+const { REQUEST_TYPES, ASTRAL_TYPES } = require("./types");
+const { api, candidateId } = require("./values");
 function makeRequest(row, column, astral, time) {
     const headers = {
         "Content-Type": "application/json",

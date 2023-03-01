@@ -1,4 +1,5 @@
 const makeRequest = require("./makeRequest");
+const { ASTRAL_OBJECTS } = require("./types");
 
 function generateRequestsArray(goalMap) {
     const astralObjects = Object.values(ASTRAL_OBJECTS);
@@ -8,7 +9,7 @@ function generateRequestsArray(goalMap) {
         row.forEach((object, y) => {
             if (astralObjects.includes(object)) {
                 const time = counter * 1000;
-                coordinates.push(makeRequest(x, y, object.toLowerCase(), time));
+                requests.push(makeRequest(x, y, object.toLowerCase(), time));
                 counter++;
             }
         });
